@@ -11,9 +11,10 @@ if(isset($_POST["submit"]))
     $nome = $_POST["nome"];
     $email = $_POST["email"];
     $senha = $_POST["senha"];
+    $CPF = $_POST["CPF"];
 
-    $result = mysqli_query($conexao, "INSERT INTO nomeeee(nome,email,senha) 
-    VALUES('$nome', '$email', '$senha')");
+    $result = mysqli_query($conexao, "INSERT INTO jornalista(nome,email,senha,CPF) 
+    VALUES('$nome', '$email', '$senha', '$CPF')");
 }
 
 ?>
@@ -24,18 +25,21 @@ if(isset($_POST["submit"]))
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Cadastro</title>
-    <link rel="stylesheet" href="style/user-account-register.css">
+    <link rel="stylesheet" href="css/registro-jornalista.css">
 </head>
 <body>
-
+    <div class="container">
+        <div class="form-image">
+            <img src="#" alt=""> 
+    </div>
     <div class="form">
-        <form action="user-account-register.php" method="POST">
+        <form action="registro-jornalista.php" method="POST">
             <div class="form-header">
                 <div class="title">
-                    <h1>Cadastre-se</h1>
+                    <h1>Jornalista - Cadastrar</h1>
                 </div>
                 <div class="login-button">
-                    <button><a href="login-user-screen.php">Login</a></button>
+                    <button><a href="index.html">Entrar</a></button>
                 </div>
             </div>
 
@@ -54,10 +58,20 @@ if(isset($_POST["submit"]))
                     <label for="senha">senha</label>
                     <input id="senha" type="senha" name="senha" placeholder="Digite sua senha" required>
                 </div>
+                <div class="input-box">
+                    <label for="CPF">CPF</label>
+                    <input id="CPF" type="CPF" name="CPF" placeholder="Digite seu CPF" required>
+                </div>
+
 
 
             </div>
-            <input class="continue-button" name="submit" type="submit" value="Entrar">
+        
+          
+            <a href="../area-usuario/registro-cliente.php">Voltar para "Cadastro Cliente"</a>
+            <div class="continue-button">
+            <input name="submit" type="submit" value="Registrar">
+            </div>
         </form>
     </div>
 </body>

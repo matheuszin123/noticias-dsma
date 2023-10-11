@@ -57,7 +57,7 @@ require_once("config.php");
         <button type="submit" class="btn">Login</button>
 
         <div class="register-link">
-          <p>Dont have an account <a href="user-account-register.php"> Register</a></p>
+          <p>Dont have an account <a href="registro-cliente.php"> Register</a></p>
         </div>
         
       </form>
