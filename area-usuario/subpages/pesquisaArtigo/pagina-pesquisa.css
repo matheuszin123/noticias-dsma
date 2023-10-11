@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    height: 100vh;
+    
+}
+header>h1{
+    text-align: center;
+}
+
+
+/* || Pesquisa */
+
+.forms-pesquisa{
+    padding: 40px 30px;
+    height: auto;
+    background-color: whitesmoke;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 28px;
+    margin: 0 0 30px 0;
+}
+.forms-pesquisa__topo label+input{
+    display: block;
+    width: 80%;
+    column-gap: 20px;
+}
+.forms-pesquisa__titulos{
+    padding: 13px 0;
+}
+.forms-pesquisa__topo .wrapper{
+    display: flex;
+}
+.forms-pesquisa__topo .wrapper > *{
+    flex: 1;
+}
+.forms-pesquisa__btn-submit{
+    align-self: end;
+    background-color: rgb(0, 81, 255);
+    color: white;
+    border: none;
+    padding: 20px;
+}
+.forms-pesquisa__btn-submit:hover{
+    background-color: blue;
+}
+
+
+
+/* || Section */
+
+.lista-noticias{
+    padding: 20px;
+}
+
+
+.lista-noticias__item{
+    display: flex;
+    /* flex-wrap: wrap; */
+    column-gap: 16px;
+
+    cursor: pointer;
+    padding: 36px;
+}
+
+/* colspan de 12 */
+.lista-noticias__item:nth-child(1){
+    flex-grow: 3;
+    flex-shrink: 1;
+}
+
+.lista-noticias__item:nth-child(2){
+    flex-grow: 9;
+    flex-shrink: 7;
+}
+
+
+.lista-noticias__item:hover{
+    background-color: rgb(248, 248, 248);
+}
+
+
+.item__imagem{
+    width: 230px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.item__informacoes{
+    display: flex;
+    flex-direction: column;
+}
+
+.item__leia-mais{
+    background-color: greenyellow;
+    margin-block-start: auto;
+    align-self: flex-end;
+
+    padding: 10px;
+    border: none;
+}
+.item__leia-mais:hover{
+    background-color: rgb(118, 175, 32);
+}
+
+
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  .pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  .pagination a:hover:not(.active) {background-color: #ddd;}

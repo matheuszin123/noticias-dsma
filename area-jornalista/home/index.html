@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="fonts/remixicon.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="usuario">
+            <img class="usuario__foto" src="img/default-profile.png" alt="usuario__foto">
+            <div class="usuario__informacoes">
+                <div class="usuario__nome">John Doe</div>
+                <div class="usuario__cargo">Jornalista</div>
+            </div>
+        </div>
+        <button class="btn btn-deslogar"><a href="http://">Sair</a></button>
+
+        
+
+    </header>
+    
+    <nav class="nav">
+        <ul class="nav__paginas">
+            <li class="pagina active"><a class="redirecionar-pagina" href="index.html">Início</a></li>
+            <li class="pagina"><a class="redirecionar-pagina" href="postados.html">Postados</a></li>
+            <li class="pagina"><a class="redirecionar-pagina" href="criar-artigos.html">Criar Artigos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Ler a URL e aplicar classe de 'active' -->
+    
+    
+    <main class="main">
+        <!-- Colocar -->
+        <h2>Início</h2>
+        
+        <div class="menu-acoes">
+            <h3 class="acoes__titulo">Ações</h3>
+            <div class="acoes">
+
+                
+                
+                <div id="postar" class="acao">
+                    <i class="ri-eye-fill ri-3x"></i>
+                    <a class="redirecionar-pagina" href="#">Ver <span class="destaque destaque-postado">Postados</span></a>
+                </div>
+                
+                
+
+                <div id="criar-artigos" class="acao">
+                    <i class="ri-edit-2-fill ri-3x"></i>
+                    <a class="redirecionar-pagina" href="#">Criar <span class="destaque destaque-artigo">Artigos</span></a>
+                </div>
+
+            </div>
+            
+            
+        </div>
+    </main>
+
+<script>
+
+    
+document.querySelector("#postar").onclick = () => window.location.href = "postados.html";
+document.querySelector("#criar-artigos").onclick = () => window.location.href = "criar-artigos.html";
+  
+
+</script>
+
+</body>
+</html>

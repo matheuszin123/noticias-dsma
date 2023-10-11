@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.842);
+  background-position: center;
+}
+
+i{
+  display: block;
+}
+
+.form-wrapper {
+  width: 420px;
+  background: white;
+  /* backdrop-filter: blur(20px); */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #000000;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+.form-wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+.form-wrapper .input-box {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  margin: 30px 0;
+}
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(8, 5, 5, 0.623);
+  border-radius: 40px;
+  font-size: 16px;
+  /* color: #fff; */
+  padding: 20px 45px 20px 20px;
+}
+.input-box input ::placeholder {
+  /* color: #fff; */
+}
+.input-box i {
+  position: relative;
+  font-size: 20px;
+}
+.form-wrapper .Recuperar_senha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 14.5px;
+ 
+}
+
+.Recuperar_senha label input {
+  accent-color: #fff;
+  margin-right: 3px;
+}
+.Recuperar_senha a {
+  
+  text-decoration: none;
+}
+.Recuperar_senha a:hover {
+  text-decoration: underline;
+}
+
+.form-wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+.form-wrapper .register-link {
+  font-size: 14.5px;
+  text-align: center;
+
+  margin: 20px 0 15px;
+}
+
+.register-link p a {
+  color:rgb(0, 153, 255);
+  text-decoration: none;
+  font-weight: 600;
+}
+.register-link p a:hover {
+  text-decoration: underline;
+}

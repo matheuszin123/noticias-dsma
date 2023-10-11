@@ -1,0 +1,90 @@
+.main{
+    padding: 30px 20px;
+    height: auto;
+}
+
+
+.menu-acoes{
+    height: 300px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.acoes__titulo{
+    margin-inline-start: 30px;
+    align-self: flex-start;
+}
+
+
+
+.acoes{
+    flex: 1;
+    list-style: none;
+    display: flex;
+    
+    column-gap: 10%;
+    
+}
+
+.acao{
+    cursor: pointer;
+    display: flex;
+    border-radius: 6px;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    
+
+    transition: transform 0.5s ease-out;
+}
+
+.acao:hover{
+    background-color: rgba(204, 204, 204, 0.575);
+    transform: scale(1.06);
+    
+}
+
+.acao .redirecionar-pagina{
+    display: block;
+    height: auto;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    width: 120px;
+    color: var(--white-color);
+    background-color: black;
+    border-radius: 10px;
+}
+
+
+
+
+/* || Behavior */
+
+.active{
+    /* javascript */
+}
+
+.hidden{
+    /* javascript */
+}
+
+.destaque:before{
+    content:"\00000a";
+    white-space: pre;
+    
+}
+
+.destaque{
+    font-weight: var(--bolder-text);
+}
+
+.destaque-postado, .destaque-artigo{
+    color: rgb(233, 226, 184);
+}

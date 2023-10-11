@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel=stylesheet href="css/base.css">
+    <link rel="stylesheet" href="css/admin-screen.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.4.2-web/css/all.css">
+    
+    <title>Document</title>
+</head>
+<body>
+
+<!--    TODO: adicionar funções: REMOÇÃO e EDIÇÃO
+        TODO: ADICIONAR validação da tabela
+        TODO: [BAIXO] corrigir botão da pesquisa tabela ao clicar no 'x'
+
+-->
+
+ <header class="header">
+        <div class="usuario">
+            <img class="usuario__foto" src="img/default-profile.png" alt="usuario__foto">
+            <div class="usuario__informacoes">
+                <div class="usuario__nome">John Doe</div>
+                <div class="usuario__cargo">Admin</div>
+            </div>
+        </div>
+        <button class="btn btn-deslogar"><a href="http://">Sair</a></button>
+
+        
+
+    </header>
+    <nav class="nav">
+        <ul class="nav__paginas">
+            <li class="pagina active"><a class="redirecionar-pagina" href="index.html">Início</a></li>
+            <li class="pagina"><a class="redirecionar-pagina" href="adicionar-usuario.html">Adicionar Usuário</a></li>
+            <li class="pagina"><a class="redirecionar-pagina" href="editar.html">Excluir Usuário</a></li>
+        </ul>
+    </nav>
+
+
+<main>
+
+    <form role="search">    
+            <input 
+            type="search"
+            name=""
+            id="table__search-input"
+            onkeyup="searchFor()"
+            placeholder="Pesquisar por...">  
+            
+            
+            <table id="table__users">
+            
+                <tbody id="table__body">
+                        <tr>
+                            <th>Cargo</th>
+                            <th>Nome Completo</th>
+                            <th>Email</th>
+                            <th>Ações</th>
+                        </tr>
+
+                        <tr>
+                            <td>Usuário</td>
+                            <td>Primo</td>
+                            <td>matheusprimo123@gmail.com</td>
+                            <td class="table__action-buttons">
+                                <i class="
+                                fa-solid fa-pen-to-square fa-xl" style="color: #25e218;"></i>
+                                <i class="fa-solid fa-trash-can fa-xl" style="color: #f72008;"></i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Usuário</td>
+                            <td>Andrew</td>
+                            <td>irineu@gmail.com</td>
+                            <td class="table__action-buttons">
+                                <i class="
+                                fa-solid fa-pen-to-square fa-xl" style="color: #25e218;"></i>
+                                <i class="fa-solid fa-trash-can fa-xl" style="color: #f72008;"></i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Usuário</td>
+                            <td>Davidson</td>
+                            <td>davidsonroblox@hotmail.com</td>
+                            <td class="table__action-buttons">
+                                <i class="
+                                fa-solid fa-pen-to-square fa-xl" style="color: #25e218;"></i>
+                                <i class="fa-solid fa-trash-can fa-xl" style="color: #f72008;"></i>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Usuário</td>
+                            <td>Samuel</td>
+                            <td>samuelanime@protonmail.com</td>
+                            <td class="table__action-buttons">
+                                <i class="
+                                fa-solid fa-pen-to-square fa-xl" style="color: #25e218;"></i>
+                                <i class="fa-solid fa-trash-can fa-xl" style="color: #f72008;"></i>
+                            </td>
+                        </tr>
+
+
+
+                </tbody>
+
+            
+            
+
+        
+            </table>
+    </form>
+
+
+    <div class="adicionar-usuario_wrapper no-visibility">
+
+    <form class="adicionar-usuario">
+
+        <h3 class="cadastro__cabeçalho">Adicionar usuário</h3>
+
+        <div id="cadastro__cargo">
+            <label for="">Cargo:</label>
+            <select id="input__cargo">
+                <option value="1">------</option>
+                <option value="2">Usuário</option>
+                <option value="3">Admin</option>
+            </select>
+        </div>
+
+        <div id="cadastro__nome-completo">
+            <label for="">Nome Completo:</label>
+            <input type="text" id="input__nome-completo"></input>
+        </div>
+
+        <div id="cadastro__email">
+            <label for="">Email:</label>
+            <input type="email" name="" id="input__email">
+
+        </div>
+
+        <div id="cadastro__senha">
+            <label for="">Senha:</label>
+            <input type="password" id="input__senha"></input>
+        </div>
+
+        <div id="cadastro__repetir-senha">
+            <label for="">Digite a senha novamente:</label>
+            <input type="password" id="input__repetir-senha"></input>
+        </div>
+
+        <button 
+        onclick="add_new_row()"
+        class="confirm-user-action"
+        >
+        Adicionar
+        </button>
+    </form>
+
+    
+    </div>
+
+    <a class="btn-add-user" onclick="openAddUserForms()" href="#">
+        Adicionar Usuário
+    </a>
+    
+
+</main>
+
+
+<script src="js/admin-screen-searchUsers.js"></script>
+
+
+</body>
+</html>
