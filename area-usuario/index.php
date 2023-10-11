@@ -49,7 +49,7 @@
 <?php elseif(isset($_SESSION["is_logged_in"]) && $_SESSION["is_logged_in"] == 0 || !isset($_SESSION["is_logged_in"])): ?>			
 
 			<div class="user-login">
-				<a href="user-account-register.php" class="btn-register">Cadastrar</a>
+				<a href="registro-cliente.php" class="btn-register">Cadastrar</a>
 				<a href="login-user-screen.php" class="btn-login">Entrar</a>
 			</div>
 
