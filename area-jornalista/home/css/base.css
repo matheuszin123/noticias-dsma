@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+:root{
+    --white-color: rgb(247, 247, 247);
+    --black-color: rgb(29, 29, 29);
+    --bolder-text: bolder;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: grid;
+}
+
+main{
+    height: 80vh;
+}
+
+/* || Componentes */
+
+/* Header */
+
+.header{
+    height: 15vh;
+    
+    background-color: rgb(0, 110, 255);
+    color: var(--white-color);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.header .usuario{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.usuario .usuario__foto{
+    border-radius: 50%;
+    border: var(--black-color) 2px;
+    width: 80px;
+    
+}
+
+.usuario .usuario__informacoes{
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+}
+
+.usuario__nome{
+    font-weight: var(--bolder-text);
+}
+
+
+
+
+
+
+
+/* Nav */
+
+.nav{
+    background-color: rgb(233, 233, 233);
+    
+}
+
+.nav__paginas{
+    display: flex;
+    align-items: center;
+}
+
+.nav__paginas .pagina{
+    display: block;
+    
+}
+
+.pagina:hover{
+    background-color: rgb(182, 182, 182);
+}
+
+.pagina .redirecionar-pagina{
+    display: block;
+    color:var(--black-color);
+    text-decoration: none;
+    padding: 13px;
+    font-weight: var(--bolder-text);
+}
+
+
+/* main */
+
+.main{
+    padding: 30px 20px;
+}
+
+
+/* Butoes */
+
+.btn{
+    background: none;
+    border: none;
+    height: auto;
+}
+
+.btn-deslogar{
+    color: red;
+    font-weight: var(--bolder-text);
+    width: 80px;
+}
+
+.btn-deslogar:hover{
+    background-color: rgba(117, 117, 117, 0.651);
+    
+}
+
+.btn-deslogar a{
+    padding: 10px;
+    display: block;
+    color: inherit;
+    text-decoration: inherit;
+}

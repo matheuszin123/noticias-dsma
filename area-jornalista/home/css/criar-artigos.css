@@ -1,0 +1,27 @@
+label, input, textarea{
+    display: block;
+    min-width: 0;
+    width: 100%;
+}
+
+textarea{
+    resize: vertical;
+}
+
+.forms-criar-artigo{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 40px 20%;
+}
+
+.btn-postar{
+    background-color: greenyellow;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.btn-postar:hover{
+    background-color: rgb(109, 160, 31);
+ 
+}

@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label, input{
+    display: block;
+    min-width: none;
+    width: 100%;
+    font-weight: bolder;
+}
+
+input[type="text"], input[type="password"]{
+    padding: 10px;
+}
+
+main{
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/journal-wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+#form-login{
+    padding: 20px;
+    
+}
+
+
+#form-login__fieldset{
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    height: 70vh;
+    padding: 20px 0;
+
+    width: 70vw;
+    padding:20px;
+
+    row-gap: 20px;
+    
+}
+
+fieldset legend{
+    text-align: start;
+    width: 100%;
+    padding: inherit;
+    background-color: black;
+    color: white;
+}
+
+
+.user-informations{
+    flex:11;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    
+
+}   
+
+.btn-submit{
+    flex:1;
+    background-color: rgb(103, 39, 223);
+    border: none;
+    color:white;
+}
+
+.btn-submit:hover{
+    background-color: rgb(55, 14, 133);
+}

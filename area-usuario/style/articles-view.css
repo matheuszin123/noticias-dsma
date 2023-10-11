@@ -1,0 +1,326 @@
+:root{
+    --primary-color: red;
+    --secondary-color: black;
+    --white-text: rgb(255, 255, 255);
+    --grey-color: grey;
+    --black-color: rgb(32, 32, 32);
+    --white-text: rgb(255, 255, 255); 
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+    
+}
+
+
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template: 140px 1fr 200px / 70vw 1fr;
+    overflow-x: hidden;
+}
+
+
+h1, h2{
+    padding: 20px 0 25px 0;
+    
+}
+
+h2{
+    /* position: sticky;
+    top:-1px; */
+    background-color: rgb(255, 255, 255);
+}
+
+
+section{
+    padding-top: 80px;
+}
+
+
+article p{
+    line-height: 25px;
+    padding: 20px 0;
+}
+
+
+header{
+    grid-area: 1/ 1 / span 1 /span 2;
+    text-align: center;
+    background-color: rgb(255, 38, 0);
+    /* color: white; */
+    
+}
+
+
+article{
+    grid-area: 2 / 1 / 3 / 1;
+    margin-inline-start: 20px;
+}
+
+
+aside{
+    grid-area: 2 / 2 / -1 / -1; 
+    background-color: whitesmoke;
+    margin: 0 20px;
+}
+
+aside ul{
+    position: sticky;
+    top:-1px;
+}
+
+aside ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+
+footer{
+    grid-area: -2 / 1/ -1 / span 3;
+    background-color: rgb(88, 87, 87);
+    color:var(--white-text);
+
+    display:flex;
+    flex-direction: column;
+}
+
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    padding: 0 10px;
+    background-color: rgba(207, 203, 203, 0.37);
+    color: black;
+    height: 50px;
+}
+
+
+/* || Header */
+
+.header{   
+    grid-area: 1 / 1 / 2 / -1;
+    color: var(--white-text);
+    background-color: var(--primary-color);
+    
+
+    display: flex;
+    flex:1;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.header h1{
+    font-size: 2.5rem;
+}
+
+
+.header .header__category{
+    display:block;
+    list-style: none;
+
+}
+
+
+.header .header__category li{
+    display: inline;
+    margin: 0 10px;    
+
+    font-weight: bold;
+}
+
+
+/* .header .user-login{
+    
+} */
+
+
+
+/* || Main */
+
+.btn {
+    border: none;
+    /* outline: none; */
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+
+
+  /* Style the active class (and buttons on mouse-over) */
+  .active, .btn:hover {
+    background-color: #666;
+    color: white;
+  }
+
+
+  .btn-tag{
+    display: inline-block;
+    background-color: var(--black-color);
+    color: var(--white-text);
+    font-weight: bolder;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+
+.section__main-article-image{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+
+.section__article-essay{
+    color: #666;
+    font-style: italic;
+}
+
+
+
+.metadata-essay{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.share-article{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+}
+
+
+.social-media-icon{
+    width: 32px;
+
+}
+
+
+/* || Footer */
+
+
+.footer-top{
+    flex-grow:1;
+    display: flex;
+    align-items: center;
+}
+
+footer .footer__logo{
+    flex-grow:1;
+    justify-self: center;
+    font-size: 2.3rem;
+    font-weight: bolder;
+}
+
+footer div ul{
+    list-style: none;
+}
+
+footer div ul li{
+    display: block;
+}
+
+
+.footer-top .footer__informations{
+    flex-grow: 2;
+    
+    display: flex;    
+}
+
+.footer-top .informations__title{
+    flex-grow:1;
+    font-weight: bold;
+}
+
+.footer-top .informations__item{
+    flex-grow:1;
+}
+
+
+.footer-top .footer__social-media{
+    flex-grow:1;
+}
+
+.footer__social-media{
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+
+.footer-bottom{
+    background-color: var(--secondary-color);
+}
+
+
+.direitos-reservados{
+    text-align: center;
+}
+
+
+
+/* || Components */
+
+.btn-register, .btn-login{
+    display: inline;
+    border-radius: 4px;
+    padding: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+}
+
+.btn-register{
+    background-color: rgb(255, 187, 0);
+}
+
+.btn-login{
+    background-color: greenyellow;
+}
+
+
+/* || Features */
+
+.sticky{
+    position: sticky;
+    
+}
+
+.fixed{
+    position: fixed;
+    bottom: 10px;
+    height: auto;
+    width: 100%;
+}
+
+
+
+.active-section{
+    font-weight: bolder;
+    font-size:1.3rem;
+    color:rgb(1, 55, 105);     
+}
+
+

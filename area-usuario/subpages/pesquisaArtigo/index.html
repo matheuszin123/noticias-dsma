@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagina-pesquisa.css">
+    <title>Tudo menos eu</title>
+</head>
+<body>
+
+
+    <header>
+        <h1>
+            Aba de pesquisa
+        </h1>
+    </header>
+
+    <form class="forms-pesquisa" action="./pesquisa.php" method="post">
+
+
+        <div class="forms-pesquisa__topo">
+            <h2 class="forms-pesquisa__titulos">Pesquisa</h2>
+            <div class="wrapper">
+                <div class="searchbox">
+                    <label class="label" for="filtro__texto">Pesquisar</label>
+                    <input type="text" name="filtro__data" id="filtro__texto" maxlength="30">
+                </div>
+
+                <div class="datefilter">
+                    <label class="label" for="filtro__data">Data</label>
+                    <input type="date" name="filtro__data" id="filtro__data">
+                </div>
+            </div>
+        </div>
+
+        <div class="categorias">
+            <h3 class="forms-pesquisa__titulos">Categorias</h3>
+            
+            <input type="checkbox" name="categoria-tecnologia" id="categoria2">
+            <label for="categoria2">Tecnologia</label>
+
+            <input type="checkbox" name="categoria-politica" id="categoria3">
+            <label for="categoria3">Política</label>
+
+            <input type="checkbox" name="categoria-esportes" id="categoria4">
+            <label for="categoria4">Esportes</label>
+        </div>
+
+        <input class="forms-pesquisa__btn-submit" type="submit" value="Pesquisar">
+
+
+    </form>
+
+    <section class="lista-noticias">
+        <h3>[Nome categoria]</h3>
+        
+        <article class="lista-noticias__item" onclick="window.location.href = '#';">
+
+            <img class="item__imagem" src="img/smurf-cat.jpg" alt="">
+
+            <div class="item__informacoes">
+                <h4 class="item__titulo">Título</h4>
+                <div class="item__jornalista">Jornalista: Lorenzo</div>
+                <p class="item__descricao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem repellendus natus quis soluta enim, accusamus minus, nisi reprehenderit id eius ut voluptates blanditiis voluptate sed ipsa? Nam ipsum cum dolores!</p>
+                <div>Categoria: <span>ADKL</span></div>
+                <div>Publicado em: <span>27/07/2007</span> </div>
+                <button class="item__leia-mais"><a href="#">Leia mais</a></button>
+            </div>
+
+        </article>
+    </section>
+
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a class="active" href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div>
+
+<script src="paginaPesquisa.js"></script>
+
+</body>
+</html>
