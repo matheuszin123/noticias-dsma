@@ -10,7 +10,7 @@
     
     <main>
         <!-- !! USEM 'validar_login.php' no lugar do arquivo HTML dentro do atributo "action"!! -->
-        <form id="form-login" action="/home/index.html" method="post">
+        <form id="form-login" action="./home/" method="post">
             <fieldset id="form-login__fieldset">
                 <legend><h2>Admin - Tela de login</h2></legend>
 

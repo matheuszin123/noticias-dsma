@@ -39,28 +39,6 @@ function searchFor(){
 }
 
 
-
-
-function openAddUserForms(){
-
-    let formAdicionarUsuarioWrapper = document.querySelector(".adicionar-usuario_wrapper");
-    let formAdicionarUsuario = document.querySelector(".adicionar-usuario");
-    
-    formAdicionarUsuarioWrapper.classList.remove("no-visibility");
-   
-
-    formAdicionarUsuarioWrapper.onclick = function(event){
-        if (event.target == formAdicionarUsuarioWrapper) {
-            formAdicionarUsuarioWrapper.classList.add("no-visibility");
-          }
-            
-    }
- 
-}
-
-
-
-
 function add_new_row() {
     
     

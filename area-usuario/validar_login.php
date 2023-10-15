@@ -11,7 +11,7 @@
     // Se input inserido:
     if(isset($_POST["usuario_email"]) && isset($_POST["usuario_senha"])){
         
-        $user_informations = mysqli_query($conexao,"SELECT * FROM nomeeee WHERE email= '".$usuario_email."' AND senha= '".$usuario_senha."'");
+        $user_informations = mysqli_query($conexao,"SELECT * FROM cliente WHERE Email= '".$usuario_email."' AND Senha= '".$usuario_senha."'");
 
         // $output = $_POST["login-response"];
         
