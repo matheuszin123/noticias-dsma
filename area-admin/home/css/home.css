@@ -1,16 +1,6 @@
-*{
-    padding: 0;
-    margin:0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-
 html, body{
     height: 100vh;
 }
-
-
 
 
 header h1{
@@ -30,7 +20,10 @@ main{
     margin: auto;
 }
 
-
+ol{
+    list-style: none;
+    padding: 10px;
+}
 
 input[type=search]{
     width: 100%;
@@ -64,29 +57,24 @@ td{
 
 
 
-td.table__action-buttons{
-  text-align: center;
-  
+.table__action-buttons{
+    text-align: center;
 }
 
-td.table__action-buttons i{
+.table__action-buttons i{
     padding: 6px;
+    cursor: pointer;
 }
-
-
 
 .btn-add-user{
     
     display: block;
     text-decoration: none;
 
-    
     width: fit-content;
     margin-inline-start: auto;
     margin-block-start: 20px;
     
-    
-
     background-color: rgb(44, 62, 228);
     color: white;
     border-radius: 10px;
@@ -102,16 +90,17 @@ td.table__action-buttons i{
 }
 
 
-div.adicionar-usuario_wrapper{
+.adicionar-usuario_wrapper, .editar-usuario_wrapper, .excluir-usuario_wrapper{
     background-color: rgba(0, 0, 0, 0.301);
+    overflow-y: auto;
     
     position: fixed;
-    
     left: 0;
-    right: 0;
     top: 0;
-    bottom: 0;
-    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
     height: 100%;
     width: 100%;
@@ -120,10 +109,10 @@ div.adicionar-usuario_wrapper{
 }
 
 
-form.adicionar-usuario{
+form.adicionar-usuario, form.editar-usuario, form.excluir-usuario{
    
     
-    height: 90%; width: 80vw;
+    height: fit-content; width: 80vw;
     
 
     display: flex;
@@ -146,6 +135,22 @@ form.adicionar-usuario{
     
 }
 
+.editar-usuario__input-container>label+input{
+    display: block;
+    min-width: 0;
+    width: 100%;
+}
+
+.editar-usuario__input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.editar-usuario__btn-container{
+    column-gap: 10px;
+}
 
 
 form.adicionar-usuario>div{
@@ -159,26 +164,54 @@ form.adicionar-usuario label{
     font-weight: bold;
 }
 
+form.excluir-usuario .popupMessage_delete-user{
+    text-align: center;
+    font-weight: bolder;
+}
 
-
-.no-visibility{
-    display: none;
+form.excluir-usuario .btn-container{
+    column-gap: 10px;
+    justify-content: center;
 }
 
 
+.btn-container{
+    display: flex;
+}
 
-.confirm-user-action{
-    background-color: rgb(0, 81, 255);
+
+.btn-user-action{
+    display: block;
     border: none;
     font-weight: bolder;
     padding: 20px;
     border-radius: 10px;
-    color: white;
-    justify-self: end;
 }
 
-.confirm-user-action:hover{
+
+.btn-confirm-user-action{
+    background-color: rgb(0, 81, 255);
+    color: white;
+    
+}
+
+
+.btn-confirm-user-action:hover{
     background-color: rgb(0, 60, 190);
     cursor:pointer;
 }
 
+.btn-cancel-user-action{
+    background-color: rgb(255, 30, 0);
+    color: white;
+
+}
+
+.btn-cancel-user-action:hover{
+    background-color: rgb(185, 15, 3);
+    cursor:pointer;
+}
+
+.no-visibility{
+    display: none;
+}

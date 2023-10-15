@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html{
@@ -67,10 +68,6 @@ main{
 
 
 
-
-
-
-
 /* Nav */
 
 .nav{
@@ -111,9 +108,12 @@ main{
 /* Butoes */
 
 .btn{
+    display: block;
     background: none;
     border: none;
     height: auto;
+    min-width: none;
+    padding: 10px;
 }
 
 .btn-deslogar{
@@ -132,4 +132,14 @@ main{
     display: block;
     color: inherit;
     text-decoration: inherit;
+}
+
+
+
+.btn-confirmar{
+    background-color: rgb(145, 255, 0);
+}
+
+.btn-cancelar{
+    background-color: rgb(255, 30, 0);
 }
