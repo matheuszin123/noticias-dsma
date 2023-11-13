@@ -11,7 +11,7 @@
     // Se input inserido:
     if(isset($_POST["usuario_email"]) && isset($_POST["usuario_senha"])){
         
-        $user_informations = mysqli_query($conexao,"SELECT * FROM cliente WHERE Email= '".$usuario_email."' AND Senha= '".$usuario_senha."'");
+        $user_informations = mysqli_query($conexao,"SELECT * FROM cliente WHERE Email= '{$usuario_email}' AND Senha= '{$usuario_senha}'");
 
         // $output = $_POST["login-response"];
         
@@ -22,7 +22,7 @@
         }
         else{
             $_SESSION["is_logged_in"] = 0;
-            header("location: index.php");
+            header("location: login.php");
         }
     
     

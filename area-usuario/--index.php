@@ -1,6 +1,6 @@
 <?php
 
-require_once("config.php");
+require_once("config.php")
 
 ?>
 
@@ -12,7 +12,7 @@ require_once("config.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tela de login</title>
-    <link rel="stylesheet" href="style/login-user-screen.css" />
+    <link rel="stylesheet" href="Login.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -23,17 +23,17 @@ require_once("config.php");
   </head>
   <body>
     <div class="form-wrapper">
-      <form action="validar_login.php" method="POST">
+      <form action="config.2.php" method="POST">
         <h1>Login</h1>
         <div class="input-box">
-            <label for="usuario-email">Email: </label>
-            <input type="email" name="usuario_email" id="usuario-email" required minlength="15" maxlength="60" autocomplete="email">
+            <label for="senha">Email </label>
+            <input type="text" name="email" id="email" placeholder="email" required minlength="15" maxlength="60" autocomplete="email">
             <!-- <i class="bx bxs-user"></i> -->
         </div>
 
         <div class="input-box">
-            <label for="usario-senha">Senha: </label>
-            <input type="password" name="usuario_senha" id="usuario-senha" required minlength="1" maxlength="16" autocomplete="current-password">
+            <label for="senha">Senha </label>
+            <input type="password" name="senha" id="senha" placeholder="senha" required minlength="1" maxlength="16" autocomplete="current-password">
             <!-- <i class="bx bxs-lock-alt"> </i> -->
         </div>
 
@@ -41,7 +41,7 @@ require_once("config.php");
           <label> <input type="checkbox"/>Remember me</label>
           <a href="#">Forgot password</a>
         </div>
-        <button type="submit" class="btn">Login</button>
+        <button type="submit" name="submit" class="btn">Login</button>
 
         <div class="register-link">
           <p>Dont have an account <a href="registro-cliente.php"> Register</a></p>
@@ -51,13 +51,3 @@ require_once("config.php");
     </div>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
