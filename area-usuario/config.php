@@ -5,7 +5,7 @@ $dbSenha = '';
 $dbNome = 'banconoticias';
 
 
-$conexao = new mysqli($dbHost, $dbUsername, $dbSenha, $dbNome);
+$conexao = mysqli_connect($dbHost, $dbUsername, $dbSenha, $dbNome);
 
 
 ?>

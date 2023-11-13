@@ -1,3 +1,18 @@
+<?php
+if(isset($_POST["submit"]))
+{
+
+    include_once ("config.php");
+
+    $titulo = $_POST["artigo__titulo"];
+    $texto = $_POST["artigo__texto"];
+    
+    $result = mysqli_query($conexao, "INSERT INTO noticia(titulo,texto) 
+    VALUES('$titulo', '$texto')");
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +24,6 @@
     <title>Document</title>
 </head>
 <body>
-    
     <header class="header">
         <div class="usuario">
             <img class="usuario__foto" src="img/default-profile.png" alt="usuario__foto">
@@ -28,14 +42,14 @@
         <ul class="nav__paginas">
             <li class="pagina active"><a class="redirecionar-pagina" href="index.html">Início</a></li>
             <li class="pagina"><a class="redirecionar-pagina" href="postados.html">Postados</a></li>
-            <li class="pagina"><a class="redirecionar-pagina" href="criar-artigos.html">Criar Artigos</a></li>
+            <li class="pagina"><a class="redirecionar-pagina" href="criar-artigos.php">Criar Artigos</a></li>
         </ul>
     </nav>
     
     <main class="main">
         <!-- Colocar -->
+        <form class="forms-criar-artigo" action="criar-artigos.php" method="POST">
 
-        <form class="forms-criar-artigo" action="postar_artigo.php" method="post">
             <h2>Criar artigos</h2>
 
             
@@ -62,7 +76,7 @@
                 <textarea name="artigo__texto" id="artigo__texto" cols="30" rows="10"></textarea>
             </div>
             
-            <input class="btn btn-postar" type="submit" value="Postar artigo">
+            <input name="submit" class="btn btn-postar" type="submit" value="Postar artigo">
         </form>
     </main>
 

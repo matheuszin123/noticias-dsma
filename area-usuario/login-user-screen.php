@@ -4,19 +4,6 @@ require_once("config.php");
 
 ?>
 
-<!-- <form action="validar_login.php" method="POST" autocomplete="on">
-    <label for="usuario-email">Email: </label>
-    <input type="email" name="usuario_email" id="usuario-email" required minlength="15" maxlength="60" autocomplete="email">
-
-
-    <br>
-    <label for="usario-senha">Senha: </label>
-    <input type="password" name="usuario_senha" id="usuario-senha" required minlength="1" maxlength="16" autocomplete="current-password">
-
-    <br>
-    <input type="submit" value="Enviar">
-</form> -->
-
 
 <!DOCTYPE html>
 <html lang="pt-br">
